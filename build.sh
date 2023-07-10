@@ -24,6 +24,15 @@ cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j
 
+cd ../../Pangolin
+
+echo "Configuring and building Thirdparty/Pangolin ..."
+
+./scripts/install_prerequisites.sh recommended
+cmake -B build
+cmake --build build
+
+
 cd ../../../
 
 echo "Uncompress vocabulary ..."
