@@ -32,6 +32,13 @@ echo "Configuring and building Thirdparty/Pangolin ..."
 cmake -B build
 cmake --build build
 
+cd ../opencv-4.4.0
+
+echo "Configuring and building Thirdparty/opencv-4.4.0 ..."
+
+mkdir -p build && cd build
+cmake ..
+cmake --build .
 
 cd ../../../
 
